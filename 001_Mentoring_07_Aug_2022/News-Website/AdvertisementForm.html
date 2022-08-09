@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+    <head>
+        <style>
+
+            body{
+                background-color: rgb(250, 240, 220);
+            }
+
+            header{
+                text-align: center;
+                background-color: violet;
+            }
+
+            p, h1{
+                padding: 15px;
+                margin: 5%;
+            }
+
+            #district{
+                font-size: 18px;
+            }
+
+            input:focus{
+                border: 10ch;
+            }
+
+            header p::first-line{
+                color: blue;
+            }
+
+            div h4::after{
+                content: "*";
+                color: red;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <header>
+                <h1>Advertisement Form</h1>
+                <p>
+                    Read below instructions before proceeding
+                    <br>
+                    Make sure to fill in all the fields where * is provided                    
+                </p>
+            </header>
+
+            <form action="">
+
+                <div>
+                    <h4>Company Name</h4>
+                    <input type="text" required spellcheck="true" title="Specify the name of your company" placeholder="Company name goes here">
+                </div>
+
+                <div>
+                    <h4>Your Name</h4>
+                    <input type="text" required spellcheck="true" placeholder="Your name goes here">
+                </div>
+
+                <div>
+                    <h4>Phone Number</h4>
+                    <input type="tel" required placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+
+
+                <div>
+
+                    <h4>Email</h4>
+                    <input type="email" required placeholder="Your email ID goes here">
+                </div>
+
+                <div>
+                    <h3>
+                        Company Address
+                    </h3>
+
+                    <h4>House No</h4>
+                    <input type="text" required>
+
+                    <h4>Street</h4>
+                    <input type="text" required>
+
+                    <h4>Area</h4>
+                    <input type="text" required>
+
+                    <h4>Area</h4>
+                    <select id="district" name="district" required>
+
+                        <option value="DC1">Choose</option>
+                        <option value="DC2">Bangalore Rural</option>
+                        <option value="DC3">Bangalore Urban</option>
+                        <option value="DC4">Ramnagar</option>
+
+                    </option>
+
+                    </select>
+
+                    <div>
+                        <h4>Type of Advertisement</h4>
+
+                        <input type="radio" id="adTypeImage" value="Image" name="adType" required>
+                            <label for="adTypeImage">Image</label>
+                        <br>
+
+                         <input type="radio" id="adTypeVideo" value="Video" name="adType" required>
+                            <label for="adTypeVideo">Video</label>
+                    </div>
+
+                    <div>
+                        <h4>Advertisement Area</h4>
+
+                        <p>Please make sure to check atleast one box</p>
+
+                        <input type="checkbox" id="adArea1" name="adArea1" value="AREA_SIDE">
+                           <label for="adArea1">Side of the article</label>
+                        <br>
+
+                        <input type="checkbox" id="adArea2" name="adArea2" value="AREA_BETWEEN">
+                        <label for="adArea2">Between  the article</label>
+                        <br>
+
+                        <input type="checkbox" id="adArea3" name="adArea3" value="AREA_END">
+                           <label for="adArea3">End of the article</label>
+                        <br>
+
+                    </div>
+
+                    <div>
+                        <h4>Advertisement Duration</h4>
+
+                        <label for="startDate">Start Date:</label>
+                            <input type="date" id="startDate" name="startDate" required >
+                        <br>
+
+                        <label for="endDate">End Date:</label>
+                            <input type="date" id="endDate" name="endDate" required>
+
+                    </div>
+
+                    <div>
+                        <h4>Total Cost</h4>
+                        <p>Rs 10000/-</p>
+                    </div>
+
+                    <div>
+                        <h4>Describe your advertisement</h4>
+                        <textarea id="adDescription" name="adDescription" rows="12" cols="30" required spellcheck="true"></textarea>
+
+                    </div>
+
+                    <div>
+                        <h4>Upload file</h4>
+                        <input type="file" required>
+                    </div>
+
+                <button type="submit">Submit</button>           
+                
+                <button type="reset">Reset</button>
+            </form>
+
+            <footer>
+                This form is developed by GL Team
+                <br>
+                Only learners of Great Learning can use this form
+                <br>
+                Copyright &copy; 2022 GreatLearning
+            </footer>
+        </section>
+    </body>
+
+</html>
