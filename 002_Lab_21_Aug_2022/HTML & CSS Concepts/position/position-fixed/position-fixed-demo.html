@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+.container{
+  width: 300px;
+}
+.one{
+    height: 300px;
+    background-color: aqua;
+  }
+
+  .two{
+    height: 400px;
+    background-color: blue;
+  }
+  .three{
+    height: 500px;
+    background-color: coral;
+
+  }
+  .four{
+    height: 600px;
+    background-color: darkmagenta;
+
+  }
+  .five{
+
+    height: 700px;
+    background-color: deeppink;
+  }
+
+  .go_to_top{
+
+    position:fixed;
+    top:90%;
+    right:2%;
+    
+    height: 50px;
+    width: 50px;
+    background-color: violet;
+  }
+
+  .go_to_top > a{
+    text-decoration: none;
+    color:yellow;
+  }
+
+  .go_to_bottom{
+
+position:fixed;
+top:2%;
+right:2%;
+
+height: 50px;
+width: 50px;
+background-color: violet;
+}
+
+.go_to_bottom > a{
+color:yellow;
+text-decoration: none;
+
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+
+<div id="one" class="one container"></div>
+<div  class="two container"></div>
+<div  class="three container"></div>
+<div  class="four container"></div>
+<div id="five" class="five container"></div>
+
+<div class="go_to_top">
+  <a href="#one">Top</a>
+</div>
+
+
+<div class="go_to_bottom">
+  <a href="#five">Bottom</a>
+</div>
+
+</body>
+
+</html>

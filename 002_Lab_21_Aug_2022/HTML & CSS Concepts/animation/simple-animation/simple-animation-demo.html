@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .green {
+
+      height: 300px;
+      width: 300px;
+      background-color: green;
+      border: 4px solid tomato;
+
+    }
+
+    .black {
+
+      height: 300px;
+      width: 300px;
+      background-color: black;
+      border: 4px solid tomato;
+
+    }
+
+    .animationContainer {
+
+      animation: animation_move_left_to_right;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+
+    @keyframes animation_move_left_to_right {
+      from {
+        /* movement - moving from one position to another position */
+        transform: translate(0, 0);
+      }
+
+      to {
+        transform: translate(200px, 0);
+      }
+    }
+
+    .animationContainer2 {
+
+      animation: animation_move_right_to_left;
+      animation-duration: 5s;
+      animation-iteration-count: 3;
+    }
+
+    @keyframes animation_move_right_to_left {
+      from {
+        /* movement - moving from one position to another position */
+        transform: translate(200px, 0);
+      }
+
+      to {
+        transform: translate(0, 0);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="animationContainer green"></div>
+
+  <div class="animationContainer2 black"></div>
+
+</body>
+
+</html>
