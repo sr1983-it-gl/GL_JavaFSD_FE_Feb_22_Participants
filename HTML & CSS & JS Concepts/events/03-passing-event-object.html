@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <button id="one" class="clickme">Click Me 1</button>
+  <br>
+
+  <button id ="two" class="clickme">Click Me 2</button>
+  <br>
+
+  <button id="three" class="clickme">Click Me 3</button>
+  <br>
+
+  <script>
+    let buttons = document.getElementsByClassName("clickme")
+
+    let buttonsArray = Array.from(buttons);
+    for (i=0; i<buttonsArray.length; i++){
+      buttonsArray[i].addEventListener("click", buttonHandler);
+    }
+
+    function buttonHandler(event){
+
+      console.log("Button is clicked...");
+
+      let targetButtonObject = event.target
+      console.log(targetButtonObject);
+
+      let id = targetButtonObject.getAttribute("id");
+      let className1 = targetButtonObject.getAttribute("class");
+
+      console.log("ID is " + id);
+      console.log("Class is " + className1);
+    }
+
+  </script>
+
+</body>
+</html>
