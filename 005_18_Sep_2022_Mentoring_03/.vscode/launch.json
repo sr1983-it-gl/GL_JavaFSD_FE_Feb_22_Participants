@@ -7,9 +7,9 @@
     {
       "type": "chrome",
       "request": "launch",
-      "name": "Food-App-1.0",
-      "url": "http://localhost:9999",
-      "webRoot": "C:\\Users\\sr198\\Git\\GreatLearning\\Batches\\GL-JavaFSD-FE-Feb-22\\GL_JavaFSD_FE_Feb_22\\005_18_Sep_2022_Mentoring_03"
+      "name": "FoodApp-v3.0",
+      "url": "http://localhost:8888",
+      "webRoot": "C:\\Users\\sr198\\Git\\GreatLearning\\Batches\\GL-JavaFSD-FE-Feb-22\\GL_JavaFSD_FE_Feb_22\\005_18_Sep_2022_Mentoring_03\\v3"
     }
   ]
 }
