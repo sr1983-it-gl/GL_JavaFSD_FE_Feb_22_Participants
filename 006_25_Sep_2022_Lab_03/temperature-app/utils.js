@@ -1,4 +1,6 @@
 
+const DEGREES_CELCIUS_SYMBOL = "&#8451";
+
 class Utils{
 
   static formatDate(){
@@ -18,4 +20,4 @@ class Utils{
   }
 }
 
-export {Utils}
+export {Utils, DEGREES_CELCIUS_SYMBOL}

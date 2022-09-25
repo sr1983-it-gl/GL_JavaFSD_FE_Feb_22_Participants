@@ -1,5 +1,5 @@
 
-import fetch from "cross-fetch";
+// import fetch from "cross-fetch";
 
 const API_BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 const API_KEY = "08a3b90e6888abe49c49b671e358abc1";
