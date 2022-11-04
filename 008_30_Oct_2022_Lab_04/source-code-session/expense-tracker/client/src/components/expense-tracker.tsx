@@ -5,6 +5,7 @@ import IExpenseItem from "../models/expense";
 import {Container, Alert, Spinner} from "react-bootstrap";
 import {ExpenseItems} from "./expense-items";
 import { ExpenseByPayees } from './expense-by-payees';
+import { ExpenseCreator } from './expense-creator';
 
 const ExpenseTracker = () => {
 
@@ -33,10 +34,24 @@ const ExpenseTracker = () => {
 
   }, []);
 
+  const refreshParent = (newExpenseItem : IExpenseItem) => {
+
+    setExpenseItems(
+      [
+        ...expenseItems,
+        newExpenseItem
+      ]
+    );  
+
+  }
+
   return (
       <Container className="my-4">
 
-        <h2>Expense Management Application</h2>
+        <h2>Expense Management Application
+          <ExpenseCreator expenseItems={expenseItems}
+          refreshParent={refreshParent}></ExpenseCreator>
+        </h2>
 
           {
             loading && (

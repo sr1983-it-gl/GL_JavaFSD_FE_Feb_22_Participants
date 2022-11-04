@@ -1,9 +1,14 @@
 {
   "users": [
-    {"id": 1, "username" : "john"},
-    {"id": 2, "username" : "mark"}
+    {
+      "id": 1,
+      "username": "john"
+    },
+    {
+      "id": 2,
+      "username": "mark"
+    }
   ],
-
   "items": [
     {
       "payeeName": "Rahul",
@@ -95,6 +100,20 @@
       "price": 1000,
       "date": "2022-04-05",
       "id": 13
-    }  
+    },
+    {
+      "expenseDescription": "Trip to paris",
+      "payeeName": "Rahul",
+      "price": 1234,
+      "date": "2022-11-04T16:00:42.257Z",
+      "id": 14
+    },
+    {
+      "expenseDescription": "Trip to Germany",
+      "payeeName": "Rahul",
+      "price": 3737,
+      "date": "2022-11-04T16:10:05.993Z",
+      "id": 15
+    }
   ]
 }
